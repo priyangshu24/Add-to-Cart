@@ -1,0 +1,40 @@
+.warning{
+  height: 40px;
+  background-color: red;
+  position: absolute;
+  right: 0;
+  top: 10%;
+  color: white;
+  font-family: cursive;
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: warning 1s infinite;
+}
+
+@keyframes warning {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+
+}
+
+.warning span {
+  margin-left: 10px;
+
+}
+
+.warning span i {
+  font-size: 20px;
+  margin-left: 10px;
+
+}

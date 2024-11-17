@@ -1,0 +1,58 @@
+/* navbar.css */
+nav {
+    background-color: #2c3e50; /* Dark blue-gray background for a modern look */
+    padding: 10px 20px; /* Padding for spacing */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.nav_box {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #ecf0f1; /* Light gray for text */
+    font-family: 'Roboto', sans-serif;
+}
+
+.nav_box span:first-child {
+    font-size: 1.8rem; /* Larger font for the shop name */
+    font-weight: bold;
+    color: #f39c12; /* Vibrant orange for branding */
+    cursor: pointer;
+}
+
+.cart {
+    display: flex;
+    align-items: center;
+    gap: 12px; /* Space between icon and number */
+    cursor: pointer;
+    position: relative;
+}
+
+.cart i {
+    font-size: 1.5rem; /* Icon size */
+    color: #ecf0f1; /* Light gray for icon */
+    transition: transform 0.3s ease-in-out, color 0.3s ease-in-out; /* Smooth hover animations */
+}
+
+.cart i:hover {
+    transform: scale(1.2); /* Slight zoom effect on hover */
+    color: #f39c12; /* Change icon color on hover to match branding */
+}
+
+.cart span:last-child {
+    background-color: #e74c3c; /* Bright red for cart count badge */
+    color: #ecf0f1; /* Light gray text for contrast */
+    border-radius: 50%;
+    padding: 5px 10px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    position: absolute;
+    top: -5px;
+    right: -10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow for badge */
+}
